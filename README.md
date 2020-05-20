@@ -1,7 +1,7 @@
 # 电视导播台
 一个没什么用的九路电视直播信号同屏网页......
 ## 功能
-![image](https://github.com/agoudbg/TV-Director/img/img.png)
+![image](https://github.com/agoudbg/TV-Director/demo_img.png)
 像导播一样的观看多达9路直播。
 ## Demo
 http://dbt.junbo.wang/tv.html<br />
