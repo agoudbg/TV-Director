@@ -58,6 +58,4 @@ function closeNav() {
 	 };
 if(navigator.userAgent.indexOf("Android")>0 || navigator.userAgent.indexOf("ios")>0 || navigator.userAgent.indexOf("iPhone")>0 || navigator.userAgent.indexOf("iPad")>0 || navigator.userAgent.indexOf("windows phone")>0){window.location.href="sorry.html";}
 
-window.onload = function () {
-	alert("<b>实验性功能：</b><br />将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。");
-}
+	alert("实验性功能：\n将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。");
