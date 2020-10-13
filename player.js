@@ -89,3 +89,11 @@ else {
    return false;
   };
  };
+ 
+ 
+ dp.on('pause', function () {
+    pausead.style.display="block";
+});
+ dp.on('play', function () {
+    pausead.style.display="none";
+});

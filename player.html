@@ -13,8 +13,6 @@ if (window.location.href.charAt('4')=='s') {
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>在线播放器 - 229资料站附属</title>
-	</head>
-	<body bgcolor="black">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
 		<style>
 			.dplayer{width:100%;height:100%}
@@ -24,7 +22,15 @@ if (window.location.href.charAt('4')=='s') {
 				color:none;
 			}
 		</style>
-
+		<script src="//cdn.junbo.wang/ads.js"></script>
+	</head>
+	<body bgcolor="black">
+		<div id="pausead" style="width:60%;height:60%;margin:0;padding:0;position:fixed;z-index:5;left:20%;top:20%;display:none;background-color:white;">
+			<svg t="1602593514234" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3180" width="22" height="22" style="position: absolute; right:5px; top: 5px ;z-index:7;"onclick="body.removeChild(pausead);";"><path d="M512 64a448 448 0 1 1 0 896A448 448 0 0 1 512 64zM408.576 363.136a32 32 0 1 0-45.312 45.248l103.808 103.744-103.808 103.744a32 32 0 1 0 45.312 45.248l103.744-103.68 103.744 103.68a32 32 0 1 0 45.248-45.248l-103.744-103.68 103.744-103.808a32 32 0 0 0-45.248-45.248L512.32 466.88z" fill="#707070" p-id="3181"></path></svg>
+			<script>
+				showad(0,"100%","100%","");
+			</script>
+		</div>
 		
 		<div id="drag"><div id="live" style="float:left; margin: 0px;"></div></div>
 		<script src="https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js"></script>
