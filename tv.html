@@ -17,7 +17,10 @@ if (window.location.href.charAt('4')=='s') {
 		
 		<!-- 帮助弹窗css -->
 		<link rel="stylesheet" href="tv.css" type="text/css">
+		<style>#header-main{
+		display:none;
 		
+		}</style>
 	</head>
 
 	<body bgcolor="black" >
@@ -33,7 +36,7 @@ if (window.location.href.charAt('4')=='s') {
 						</span>
 					</td>
 					<td style="text-align:right;vertical-align:middle">
-						<!-- 打开弹窗按钮 --><button class="myBtn" id="go">229资料站</button><button class="myBtn" onclick="openNav()">设置</button><button class="myBtn" id="myBtn">帮助</button>
+						<!-- 打开弹窗按钮 --><button class="myBtn" id="go">229资料站</button><button class="myBtn" onclick="openNav()">选频道</button><button class="myBtn" id="myBtn">帮助</button>
 						
 					</td>
 				</tr>
@@ -125,8 +128,8 @@ if (window.location.href.charAt('4')=='s') {
 	    <h2>我可以单独观看一个台吗？</h2>
 	    <p>当然可以。请访问<a href="player.html" target="_blank">player.html</a>。</p>
 	    <h2>如何使用player.html？</h2>
-		<p>参数id：决定该类型下打开的源的编号<br />例如：CCTV源下有C1、C2、C3三个源，则输入?id=2可打开C3</p>
-		<p>参数s：source，id为空时，定义自定义源的链接<br />例如：输入?s=http://a.b/c.m3u8，即可打开c.m3u8</p>
+		
+		<p>参数s：source，，定义自定义源的链接<br />例如：输入?s=http://a.b/c.m3u8，即可打开c.m3u8</p>
 	    <h2>太感谢你了！</h2>
 	    <p>非常高兴得到您的认可。能用金钱认可我吗？哈哈</p>
 		<img src="https://ae01.alicdn.com/kf/He9fad27bec02443793d048394bcdb7eaM.jpg" width="300px" alt="" />
@@ -141,39 +144,13 @@ if (window.location.href.charAt('4')=='s') {
 </div>
 
 
-	<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-	<!-- 导播台广告 -->
-	<!-- <ins class="adsbygoogle" -->
-		 <!-- style="display:inline-block;width:500px;height:100px;" -->
-		 <!-- data-ad-client="ca-pub-5639925822995109" -->
-		 <!-- data-ad-slot="6382823486"></ins> -->
-	<!-- <script> -->
-		 <!-- (adsbygoogle = window.adsbygoogle || []).push({}); -->
-	<!-- </script> -->
 <div id="mySidenav" class="sidenav">
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	<br />
-	<input id="inp1" pattern="[0-9]" placeholder="监视器1" size="3"></input>
-	<input id="btn1" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp2" pattern="[0-9]" placeholder="监视器2" size="3"></input>
-	<input id="btn2" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp3" pattern="[0-9]" placeholder="监视器3" size="3"></input>
-	<input id="btn3" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp4" pattern="[0-9]" placeholder="监视器4" size="3"></input>
-	<input id="btn4" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp5" pattern="[0-9]" placeholder="监视器5" size="3"></input>
-	<input id="btn5" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp6" pattern="[0-9]" placeholder="监视器6" size="3"></input>
-	<input id="btn6" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp7" pattern="[0-9]" placeholder="监视器7" size="3"></input>
-	<input id="btn7" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp8" pattern="[0-9]" placeholder="监视器8" size="3"></input>
-	<input id="btn8" type="button" value="跳转" ></input> <br /> <br />
-	<input id="inp9" pattern="[0-9]" placeholder="监视器9" size="3"></input>
-	<input id="btn9" type="button" value="跳转" ></input> <br /> <br />
+	<iframe id="livecen" width="100%"  height="70%"frameborder="no" border="0" allowfullscreen="false" src="http://229.junbo.wang/live/new.html" ></iframe>  <br /> <br />
 	<input id="autoplay" type="checkbox" checked onchange="checkField(this.checked)"><span style="color:white;" >自动播放<br />（部分浏览器不支持）</span></input> <br /> <br />
 
-	<a href="https://229.junbo.wang/live/" style="font-size:16px" target="_blank">频道号列表</a>
+	<!-- <a href="https://229.junbo.wang/live/" style="font-size:16px" target="_blank">频道号列表</a> -->
 </div>
 
 

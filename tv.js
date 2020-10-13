@@ -32,7 +32,7 @@ window.onclick = function(event) {
 
 /*改变原始宽度（0）*/
 function openNav() {
-	document.getElementById("mySidenav").style.width = "200px";
+	document.getElementById("mySidenav").style.width = "20%";
 }
 /*恢复原始宽度0*/
 function closeNav() {
@@ -58,4 +58,4 @@ function closeNav() {
 	 };
 if(navigator.userAgent.indexOf("Android")>0 || navigator.userAgent.indexOf("ios")>0 || navigator.userAgent.indexOf("iPhone")>0 || navigator.userAgent.indexOf("iPad")>0 || navigator.userAgent.indexOf("windows phone")>0){window.location.href="sorry.html";}
 
-	alert("实验性功能：\n将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。");
+	alert("实验性功能：\n将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。\n另外原默认源已关闭，请通过嵌入的新版直播中心自行拖拽添加。");
