@@ -9,22 +9,22 @@ var btn2 = document.getElementById("go");
 var span = document.getElementsByClassName("close")[0];
 
 // 点击按钮打开弹窗
-btn.onclick = function() {
+btn.onclick = function () {
 	modal.style.display = "block";
 }
 
-btn2.onclick = function() {
-	window.open("https://229.junbo.wang");   
+btn2.onclick = function () {
+	window.open("https://229.junbo.wang");
 }
 
 
 // 点击 <span> (x), 关闭弹窗
-span.onclick = function() {
+span.onclick = function () {
 	modal.style.display = "none";
 }
 
 // 在用户点击其他地方时，关闭弹窗
-window.onclick = function(event) {
+window.onclick = function (event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
 	}
@@ -40,22 +40,22 @@ function closeNav() {
 }
 
 
-	 window.onload = function () {
-	 
-	  oBox.ondragenter = function(){
-	  return false;
-	  };
-	  oBox.ondragover = function(){
-	   return false;
-	  };
-	  oBox.ondragleave = function(){
-	   return false;
-	  };
-	  oBox.ondrop = function(ev){
-	   return false;
-	   
-	  };
-	 };
-if(navigator.userAgent.indexOf("Android")>0 || navigator.userAgent.indexOf("ios")>0 || navigator.userAgent.indexOf("iPhone")>0 || navigator.userAgent.indexOf("iPad")>0 || navigator.userAgent.indexOf("windows phone")>0){window.location.href="sorry.html";}
+window.onload = function () {
 
-	alert("实验性功能：\n将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。\n另外原默认源已关闭，请通过嵌入的新版直播中心自行拖拽添加。");
+	oBox.ondragenter = function () {
+		return false;
+	};
+	oBox.ondragover = function () {
+		return false;
+	};
+	oBox.ondragleave = function () {
+		return false;
+	};
+	oBox.ondrop = function (ev) {
+		return false;
+
+	};
+};
+if (navigator.userAgent.indexOf("Android") > 0 || navigator.userAgent.indexOf("ios") > 0 || navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("iPad") > 0 || navigator.userAgent.indexOf("windows phone") > 0) { window.location.href = "sorry.html"; }
+
+alert("实验性功能：\n将一个http直播流文字拖拽到某个窗格来在该窗格打开该直播流。\n另外原默认源已关闭，请通过嵌入的新版直播中心自行拖拽添加。");
